@@ -1,0 +1,120 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+ .plugin-title,
+.tab-title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+}
+
+.inp-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 18px;
+}
+
+.inp-form div {
+  width: 100%;
+}
+
+.inp-form input {
+  width: 50%;
+}
+
+.inp-form select {
+  width: 50%;
+}
+
+.inp-form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#upcoming-table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 95%;
+}
+
+#upcoming-table th {
+  background-color: #222222;
+  color: rgb(107, 234, 119);
+  text-transform: uppercase;
+}
+
+#upcoming-table th,
+#upcoming-table td {
+  padding: 8px;
+  font-size: 18px;
+}
+
+#upcoming-table tr {
+  border-bottom: 1px solid #67ddec;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    display: block;
+    text-align: center;
+  }
+  .inp-form {
+    display: block;
+  }
+
+  .form-container .btn .submit {
+    text-align: center;
+  }
+
+  #upcoming-table thead {
+    display: none;
+  }
+
+  #upcoming-table td {
+    display: block;
+  }
+
+  #upcoming-table td:first-child {
+    background-color: #84e670;
+    color: #8ba3ec;
+    text-align: center;
+  }
+  
+  #upcoming-table td:nth-child(2)::before {
+    content: "Date";
+  }
+
+  #upcoming-table td:nth-child(3)::before {
+    content: "Occasion";
+  }
+
+  #upcoming-table td:nth-child(4)::before {
+    content: "Post Title";
+  }
+
+  #upcoming-table td:nth-child(5)::before {
+    content: "Author";
+  }
+  #upcoming-table td:nth-child(6)::before {
+    content: "Reviewer";
+  }
+
+  #upcoming-table td {
+    text-align: right;
+  }
+
+  #upcoming-table td::before {
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+}
